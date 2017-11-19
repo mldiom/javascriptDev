@@ -26,12 +26,12 @@ const getActualSleepHours = () => {
 };
 
 const getIdealSleepHours = () => {
-  let idealHours = 8;
+  const idealHours = 8;
   return idealHours*7;
 };
 
 const calculateSleepDebt = () => {
-  let actualSleepHours = getActualSleepHours();
+  const actualSleepHours = getActualSleepHours();
   const idealSleepHours = getIdealSleepHours();
   
   if (actualSleepHours < idealSleepHours)
